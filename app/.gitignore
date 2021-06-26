@@ -1,0 +1,46 @@
+/build
+.gradle/
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/captures
+.externalNativeBuild
+bin/
+gen/
+Docs/
+google-services.json
+proguard-rules.pro
+app.iml
+test/
+androidTest/
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# profanity filter values
+profanity.xml
+
+
+# Version control
+vcs.xml
+
+# lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+# lint/reports/
+
+# Android Profiling
+*.hprof
+
+#security
+strings.xml
+font_certs.xml
+
+HttpRequest/
+HttpHandler.java

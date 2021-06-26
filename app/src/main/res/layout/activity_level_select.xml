@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/level_select_fragment">
+
+
+    <TextView
+        android:id="@+id/levelSelectTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Select Level"
+        android:textColor="@color/black"
+        android:elevation="2dp"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.06999999"
+        app:layout_constraintWidth_percent=".85" />
+
+    <Button
+        android:id="@+id/levelBtn1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:elevation="2dp"
+        android:text="1"
+        android:onClick="levelSelect"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.26999998"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/levelBtn2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:text="2"
+        android:onClick="levelSelect"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="@+id/levelBtn1"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/levelBtn3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:text="3"
+        android:onClick="levelSelect"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="@+id/levelBtn2"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/levelBtn4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:text="4"
+        android:onClick="levelSelect"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn1"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.51"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/levelBtn5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:text="5"
+        android:onClick="levelSelect"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn2"
+        app:layout_constraintHeight_percent=".15"
+
+        app:layout_constraintTop_toTopOf="@+id/levelBtn4"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/levelBtn6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:text="6"
+        android:onClick="levelSelect"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn3"
+        app:layout_constraintHeight_percent=".15"
+
+        app:layout_constraintTop_toTopOf="@+id/levelBtn5"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/levelBtn7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:text="7"
+        android:onClick="levelSelect"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn4"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/levelBtn8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:text="8"
+        android:onClick="levelSelect"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn5"
+        app:layout_constraintHeight_percent=".15"
+
+        app:layout_constraintTop_toTopOf="@+id/levelBtn7"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/levelBtn9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:text="9"
+        android:onClick="levelSelect"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn6"
+        app:layout_constraintHeight_percent=".15"
+
+        app:layout_constraintTop_toTopOf="@+id/levelBtn8"
+        app:layout_constraintWidth_percent=".25" />
+
+
+    <ImageButton
+        android:id="@+id/rightArrowBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:elevation="2dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn9"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+
+        app:layout_constraintWidth_percent=".2"
+        app:srcCompat="@drawable/right_arrow" />
+
+    <ImageButton
+        android:id="@+id/leftArrowBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:elevation="2dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn7"
+        app:layout_constraintTop_toTopOf="@+id/rightArrowBtn"
+
+        app:layout_constraintVertical_bias="0.0"
+
+        app:layout_constraintWidth_percent=".2"
+        app:srcCompat="@drawable/left_arrow" />
+
+
+
+
+    <ImageView
+        android:id="@+id/level1BronzeImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/levelBtn1"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn1"
+        app:layout_constraintHeight_percent=".08"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/levelSelectTV"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/level1SilverImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn1"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn1"
+        app:layout_constraintTop_toTopOf="@+id/level1BronzeImg"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_silver" />
+
+    <ImageView
+        android:id="@+id/level1GoldImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn1"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn1"
+
+        app:layout_constraintTop_toTopOf="@+id/level1SilverImg"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_gold" />
+
+    <ImageView
+        android:id="@+id/level2BronzeImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/levelBtn2"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn2"
+        app:layout_constraintHeight_percent=".08"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn2"
+        app:layout_constraintTop_toBottomOf="@+id/levelSelectTV"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/level2SilverImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn2"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn2"
+        app:layout_constraintTop_toTopOf="@+id/level1BronzeImg"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_silver" />
+
+    <ImageView
+        android:id="@+id/level2GoldImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn2"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn2"
+
+        app:layout_constraintTop_toTopOf="@+id/level1SilverImg"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_gold" />
+
+    <ImageView
+        android:id="@+id/level3BronzeImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/levelBtn3"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn3"
+        app:layout_constraintHeight_percent=".08"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn3"
+        app:layout_constraintTop_toBottomOf="@+id/levelSelectTV"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/level3SilverImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn3"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn3"
+        app:layout_constraintTop_toTopOf="@+id/level1BronzeImg"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_silver" />
+
+    <ImageView
+        android:id="@+id/level3GoldImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn3"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn3"
+
+        app:layout_constraintTop_toTopOf="@+id/level1SilverImg"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_gold" />
+
+    <ImageView
+        android:id="@+id/level4BronzeImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/levelBtn4"
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn4"
+        app:layout_constraintHeight_percent=".08"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn4"
+        app:layout_constraintTop_toBottomOf="@+id/levelBtn1"
+        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/level4SilverImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn4"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn4"
+        app:layout_constraintTop_toTopOf="@+id/level4BronzeImg"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_silver" />
+
+    <ImageView
+        android:id="@+id/level4GoldImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn4"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn4"
+
+        app:layout_constraintTop_toTopOf="@+id/level4SilverImg"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_gold" />
+
+    <ImageView
+        android:id="@+id/level5BronzeImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn5"
+        app:layout_constraintHeight_percent=".08"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn5"
+        app:layout_constraintTop_toTopOf="@+id/level4BronzeImg"
+        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/level5SilverImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn5"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn5"
+        app:layout_constraintTop_toTopOf="@+id/level4BronzeImg"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_silver" />
+
+    <ImageView
+        android:id="@+id/level5GoldImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn5"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn5"
+
+        app:layout_constraintTop_toTopOf="@+id/level4SilverImg"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_gold" />
+
+    <ImageView
+        android:id="@+id/level6BronzeImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn6"
+        app:layout_constraintHeight_percent=".08"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn6"
+        app:layout_constraintTop_toTopOf="@+id/level4BronzeImg"
+        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/level6SilverImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn6"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn6"
+        app:layout_constraintTop_toTopOf="@+id/level4BronzeImg"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_silver" />
+
+    <ImageView
+        android:id="@+id/level6GoldImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn6"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn5"
+
+        app:layout_constraintTop_toTopOf="@+id/level4SilverImg"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_gold" />
+
+    <ImageView
+        android:id="@+id/level7BronzeImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn7"
+        app:layout_constraintHeight_percent=".08"
+
+        app:layout_constraintTop_toBottomOf="@+id/levelBtn4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn7"
+        app:layout_constraintBottom_toTopOf="@+id/levelBtn7"
+
+        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/level7SilverImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn7"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn7"
+        app:layout_constraintTop_toTopOf="@+id/level7BronzeImg"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_silver" />
+
+    <ImageView
+        android:id="@+id/level7GoldImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn7"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn7"
+
+        app:layout_constraintTop_toTopOf="@+id/level7BronzeImg"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_gold" />
+
+    <ImageView
+        android:id="@+id/level8BronzeImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn8"
+        app:layout_constraintHeight_percent=".08"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn8"
+        app:layout_constraintTop_toTopOf="@+id/level7BronzeImg"
+        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/level8SilverImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn8"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn8"
+        app:layout_constraintTop_toTopOf="@+id/level7BronzeImg"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_silver" />
+
+    <ImageView
+        android:id="@+id/level8GoldImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn8"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn8"
+
+        app:layout_constraintTop_toTopOf="@+id/level7SilverImg"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_gold" />
+
+    <ImageView
+        android:id="@+id/level9BronzeImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn9"
+        app:layout_constraintHeight_percent=".08"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn9"
+        app:layout_constraintTop_toTopOf="@+id/level7BronzeImg"
+        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/level9SilverImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn9"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn9"
+        app:layout_constraintTop_toTopOf="@+id/level7BronzeImg"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_silver" />
+
+    <ImageView
+        android:id="@+id/level9GoldImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/levelBtn9"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/levelBtn9"
+
+        app:layout_constraintTop_toTopOf="@+id/level7SilverImg"
+        app:layout_constraintWidth_percent=".08"
+        app:srcCompat="@drawable/bubble_gold" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:elevation="2dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintHorizontal_bias="0.03"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintWidth_percent=".1"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

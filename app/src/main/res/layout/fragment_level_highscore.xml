@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Highscores.LevelSelectHighscoreFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="1"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.100000024"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="2"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/levelScoreSelectBtn1"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="3"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/levelScoreSelectBtn2"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="4"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="5"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn2"
+            app:layout_constraintTop_toTopOf="@+id/levelScoreSelectBtn4"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="6"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn3"
+            app:layout_constraintTop_toTopOf="@+id/levelScoreSelectBtn5"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="7"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn4"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="8"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn5"
+            app:layout_constraintTop_toTopOf="@+id/levelScoreSelectBtn7"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="9"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn6"
+            app:layout_constraintTop_toTopOf="@+id/levelScoreSelectBtn8"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="10"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="11"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn8"
+            app:layout_constraintTop_toTopOf="@+id/levelScoreSelectBtn10"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <Button
+            android:id="@+id/levelScoreSelectBtn12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="12"
+            android:background="@drawable/button_rounded_corner"
+            android:textColor="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn9"
+            app:layout_constraintTop_toTopOf="@+id/levelScoreSelectBtn11"
+
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintWidth_percent=".25"/>
+
+        <ImageButton
+            android:id="@+id/scoreTabLeftArrow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent=".1"
+            app:layout_constraintStart_toStartOf="@+id/levelScoreSelectBtn10"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.92"
+            app:layout_constraintWidth_percent=".2"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <ImageButton
+            android:id="@+id/scoreTabRightArrow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintEnd_toEndOf="@+id/levelScoreSelectBtn12"
+            app:layout_constraintHeight_percent=".1"
+
+            app:layout_constraintTop_toTopOf="@+id/scoreTabLeftArrow"
+            app:layout_constraintWidth_percent=".2"
+            app:srcCompat="@drawable/right_arrow" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

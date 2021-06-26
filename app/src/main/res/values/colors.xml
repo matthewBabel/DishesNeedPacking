@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B96900</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#A9A9A9</color>
+
+    <color name="green">#A0BA</color>
+    <color name="red">#B00</color>
+    <color name="yellow">#FF0</color>
+
+    <color name="jd_red">#CB0000</color>
+    <color name="jd_light">#E5001F</color>
+
+    <color name="grey">#a39d9d</color>
+    <color name="grey_light">#e0e0e0</color>
+    <color name="black">#000000</color>
+    <color name="background">#e9eef5</color>
+    <color name="buttonWhite">#ffffff</color>
+
+</resources>

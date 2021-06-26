@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/mainActivityContainer"
+    tools:context=".Acitivities.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bubbleLayout"
+        android:elevation="-1dp"
+        >
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainActivityGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/privacypolicy"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/googleSignOutBtn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+        android:id="@+id/mainNameText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Dishes Need Packing"
+        android:textColor="@color/black"
+        android:elevation="2dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintWidth_percent=".85"
+        app:layout_constraintHeight_percent=".10"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:onClick="levelSelect"
+        android:text="@string/button_level_select"
+        android:textColor="@color/black"
+        android:elevation="2dp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintWidth_percent=".6" />
+
+    <Button
+        android:id="@+id/customGameBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:text="Custom Game"
+        android:onClick="playCustomGame"
+        android:textColor="@color/black"
+        android:elevation="2dp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintWidth_percent=".5"/>
+
+
+    <Button
+        android:id="@+id/btnLocalHighscores"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:onClick="viewHighScores"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="HighScores"
+        android:textColor="@color/black"
+        android:elevation="2dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        app:layout_constraintWidth_percent=".6" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:elevation="2dp"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/mainNameText"
+        app:layout_constraintVertical_bias="0.51"
+        app:layout_constraintWidth_percent=".60" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleSignInBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="2dp"
+
+            app:buttonSize="wide"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.77"
+            app:layout_constraintWidth_percent=".4" />
+
+
+
+        <Button
+        android:id="@+id/googleSignOutBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Logout"
+        android:background="@drawable/button_rounded_corner"
+        android:visibility="invisible"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/googleSignInBtn"
+        app:layout_constraintWidth_percent=".4" />
+
+
+        <ImageButton
+            android:id="@+id/sfxButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".08"
+            app:layout_constraintHorizontal_bias="0.915"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/googleSignOutBtn"
+            app:layout_constraintVertical_bias="0.597"
+            app:layout_constraintWidth_percent=".1"
+            app:srcCompat="@drawable/sfx_symbol" />
+
+        <ImageButton
+            android:id="@+id/musicButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".08"
+            app:layout_constraintHorizontal_bias="0.776"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sfxButton"
+            app:layout_constraintWidth_percent=".1"
+            app:srcCompat="@drawable/music_symbol" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameTF"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="username"
+            android:textColorHint="@color/grey"
+            android:visibility="invisible"
+            android:elevation="2dp"
+            android:textColor="@color/black"
+
+
+            app:boxBackgroundColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65999997"
+            app:layout_constraintWidth_percent=".4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:elevation="2dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.7"
+                tools:layout_editor_absoluteX="-4dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/final_score_fragment"
+    >
+
+    <TextView
+        android:id="@+id/finalScoreTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.050000012"
+        app:layout_constraintWidth_percent=".85" />
+
+    <TextView
+        android:id="@+id/dishesPerSecondTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".07"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001"
+        app:layout_constraintWidth_percent=".75" />
+
+    <TextView
+        android:id="@+id/timeTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:gravity="left"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintWidth_percent=".40" />
+
+    <TextView
+        android:id="@+id/dishesTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18"
+        app:layout_constraintWidth_percent=".55" />
+
+    <TextView
+        android:id="@+id/totalSpacesTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="right"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/timeTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".05"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/timeTV"
+        app:layout_constraintTop_toTopOf="@+id/timeTV"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".55" />
+
+    <TextView
+        android:id="@+id/runsTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        app:layout_constraintWidth_percent=".70" />
+
+    <TextView
+        android:id="@+id/mishapsTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/takenZonesTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".06"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/runsTV"
+        app:layout_constraintVertical_bias="0.89"
+        app:layout_constraintWidth_percent=".75" />
+
+    <TextView
+        android:id="@+id/takenZonesTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/timeTV"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        app:layout_constraintWidth_percent=".60" />
+
+    <TextView
+        android:id="@+id/nextDishesTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/timeTV"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48000002"
+        app:layout_constraintWidth_percent=".55" />
+
+    <TextView
+        android:id="@+id/dishePickedUpTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/timeTV"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:layout_constraintWidth_percent=".55" />
+
+
+    <TextView
+        android:id="@+id/finalScoreTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62"
+        app:layout_constraintWidth_percent=".75" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/finalScoreUsernameTL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="username"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+
+        app:boxBackgroundColor="@color/grey_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74"
+        app:layout_constraintWidth_percent=".6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/finalScoreUsernameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:elevation="2dp"
+            android:textColor="@color/black"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            tools:layout_editor_absoluteX="-4dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--
+    <Button
+    android:id="@+id/enterBtn"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:background="@drawable/button_rounded_corner"
+    android:elevation="2dp"
+    android:onClick="enterData"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp"
+    android:text="Enter"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+
+    app:autoSizeTextType="uniform"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHeight_percent=".12"
+    app:layout_constraintStart_toStartOf="parent"
+
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0"
+    app:layout_constraintWidth_percent=".40" />-->
+
+
+    <Button
+        android:id="@+id/nextLevelBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:elevation="2dp"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="Next Level"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".12"
+        app:layout_constraintHorizontal_bias="0.2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retryBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".35" />
+
+    <Button
+        android:id="@+id/retryBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:elevation="2dp"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="Retry"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".12"
+        app:layout_constraintHorizontal_bias="0.8"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        app:layout_constraintWidth_percent=".35" />
+
+    <Button
+        android:id="@+id/retryCenteredBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_rounded_corner"
+        android:elevation="2dp"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="Retry"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".12"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        app:layout_constraintWidth_percent=".35" />
+
+    <ImageView
+        android:id="@+id/bubbleBronze"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/nextLevelBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalScoreTV"
+        app:layout_constraintVertical_bias="0.88"
+        app:layout_constraintWidth_percent=".2"
+        app:srcCompat="@drawable/bubble_bronze" />
+
+    <ImageView
+        android:id="@+id/silverBubble"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bubble_silver"
+        app:layout_constraintTop_toTopOf="@+id/bubbleBronze"
+        tools:layout_editor_absoluteY="557dp"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintWidth_percent=".2"/>
+
+    <ImageView
+        android:id="@+id/goldBubble"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bubbleBronze"
+        app:srcCompat="@drawable/bubble_gold"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintWidth_percent=".2"/>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:elevation="2dp"
+        android:scaleType="fitCenter"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".1"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
